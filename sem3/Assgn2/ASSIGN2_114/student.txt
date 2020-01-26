@@ -1,0 +1,4 @@
+Rollnos batch marks password 
+BT18CSE500 R1 30 pwd1 
+BT18CSE400 R2 40 pwd2 
+BT18CSE079 R4 20 pwd3 
