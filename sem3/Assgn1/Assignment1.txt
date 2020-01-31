@@ -1,0 +1,49 @@
+mkdir ASSIGN1
+cd ASSIGN1
+mkdir BT18CSE114
+mkdir Mishra
+cd BT18CSE114
+emacs E114
+cd ..
+cd Mishra
+vi Mishra.txt
+cat Mishra.txt
+cd ../BT18CSE114
+wc -l E114
+wc -c E114
+grep -n '114' E114
+grep -n '114' E114 > ../output_store1
+fc -ln -5 > last5_cmd
+cd ..
+mkdir ../CP_ASSIGN1
+cp -r * ../CP_ASSIGN1
+cd ..
+mv CP_ASSIGN1 ASSIGN1/Mishra
+cd ASSIGN1/Mishra
+mv CP_ASSIGN1 REM_ASSIGN1
+cd REM_ASSIGN1
+rm -r BT18CSE114
+mkdir ../../E0
+cd ../..
+find . -name "Mishra"
+find ./ -type f -size 0 -delete
+cd BT18CSE114
+chmod 771 E114
+history >> E114
+du -sh $HISTFILE
+cmp E114 ../Mishra/Mishra.txt > ../../E114
+cd ../..
+curl ifconfig.me >> E114
+cd ASSIGN1/BT18CSE114
+grep -v "114" E114
+awk '/^VNIT Nagpur/' E114 >> ../Mishra/Mishra.txt
+cd ../Mishra
+sed -i '/VNIT/d' Mishra.txt
+awk '/[zZa]$/' Mishra.txt
+cd ../BT18CSE114
+awk '{ for(i = 1 ; i <= NF ; i++) count = count + gsub("114", "");} END {print count;}' E114
+sed -n '2,4 p' E114
+cd ../Mishra
+sed -i 's/VNIT/&\n/g' Mishra.txt
+cd ../BT18CSE114
+sed -i 's/114/Mishra/g' E114
